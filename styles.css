@@ -1,0 +1,31 @@
+div {
+    display: flex;
+    margin: .5rem;
+}
+
+#number1 {
+    border: 2px solid black;
+    margin: .3rem;
+}
+
+#number2 {
+    border: 2px solid black;
+    margin: .3rem;
+}
+
+#result {
+    border: 2px solid black;
+    margin: .3rem;
+}
+
+button {
+    margin: .3rem;
+}
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    margin: .5rem;
+}

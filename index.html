@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- <script src="calculator.js"></script> -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form method="POST" action="http://localhost:3000/profile">
+        <div>
+            <input type="number" value="0" id="number1" name="number1"></input> 
+            <select id="operator" name="operator">
+                <option id="+" value="+">+</option>
+                <option id="-" value="-">-</option>
+                <option id="*" value="*">*</option>
+                <option id="/" value="/">/</option>
+            </select>
+            <input type="number" value="0" id="number2" name="number2"></input>
+            <input type="submit" value="=" name="submit"></input> <span id="result">0</span>
+        </div>
+        <div>
+            <input type="reset" id="reset"></input>
+        </div>
+    </form>
+
+    <script>
+    let number1 = 0
+    let number2 = 0
+    function calc(number1, number2, operation) {
+        let num1 = Number.parseFloat(number1);
+        let num2 = Number.parseFloat(number2);
+        let result = function result() {
+            switch (operation) {
+            case '+':
+                const add = num1 + num2;
+                return add;
+                break;
+            case '-':
+                const subtract = num1 - num2;
+                return subtract;
+                break;
+            case '*':
+                const multiply = num1 * num2;
+                return multiply;
+                break;
+            case '/':
+                const divide = num1 / num2;
+                return divide;
+                break;
+            default: 
+                return num1 + num2;
+            };
+        };
+        // document.getElementById(result).innerHTML = "hello"
+        return result()
+    }
+    
+    console.log(calc(number1, number2,'+'))
+    
+    // document.getElementById("result").innerHTML = calc(number1, number2, operation)
+    document.getElementById("result").formTarget = "_blank"
+    </script>
+</body>
+</html>
