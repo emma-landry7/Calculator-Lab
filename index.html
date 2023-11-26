@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <!-- <script src="calculator.js"></script> -->
+    <script src="calculator.js"></script>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <h1>Calculator</h1>
-    <form method="POST" action="http://localhost:3000/profile">
-        <div>
-            <input type="number" value="0" id="number1" name="number1"></input> 
-            <select id="operator" name="operator">
-                <option id="+" value="+">+</option>
-                <option id="-" value="-">-</option>
-                <option id="*" value="*">*</option>
-                <option id="/" value="/">/</option>
-            </select>
-            <input type="number" value="0" id="number2" name="number2"></input>
-            <input type="submit" value="=" name="submit"></input> <span id="result">0</span>
-        </div>
-        <div>
-            <input type="reset" id="reset"></input>
-        </div>
-    </form>
+    <table id="calculator">
+        <tr>
+            <td colspan="3" id="result"></td>
+            <td><input type="button" value="reset" onclick="reset()"></input></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="display('1')"> </td>
+            <td><input type="button" value="2" onclick="display('2')"> </td>
+            <td><input type="button" value="3" onclick="display('3')"> </td>
+            <td><input type="button" value="+" onclick="display('+')"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="display('4')"> </td>
+            <td><input type="button" value="5" onclick="display('5')"> </td>
+            <td><input type="button" value="6" onclick="display('6')"> </td>
+            <td><input type="button" value="-" onclick="display('-')"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="display('7')"> </td>
+            <td><input type="button" value="8" onclick="display('8')"> </td>
+            <td><input type="button" value="9" onclick="display('9')"> </td>
+            <td><input type="button" value="*" onclick="display('*')"> </td>
+        </tr>
+    </table>
 
-    <script>
+    <!-- <script>
     let number1 = 0
     let number2 = 0
     function calc(number1, number2, operation) {
@@ -54,14 +62,12 @@
                 return num1 + num2;
             };
         };
-        // document.getElementById(result).innerHTML = "hello"
         return result()
     }
     
     console.log(calc(number1, number2,'+'))
     
     // document.getElementById("result").innerHTML = calc(number1, number2, operation)
-    document.getElementById("result").formTarget = "_blank"
-    </script>
+    </script> -->
 </body>
 </html>
