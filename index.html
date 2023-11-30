@@ -32,42 +32,10 @@
             <td><input type="button" value="9" onclick="display('9')"> </td>
             <td><input type="button" value="*" onclick="display('*')"> </td>
         </tr>
+        <tr>
+            <td colspan="2"><input id="zero" type="button" value="0" onclick="display('0')"></td>
+            <td><input type="button" value="/" onclick="display('/')"></td>
+            <td><input type="button" value="=" onclick="solve()"></td>
     </table>
-
-    <!-- <script>
-    let number1 = 0
-    let number2 = 0
-    function calc(number1, number2, operation) {
-        let num1 = Number.parseFloat(number1);
-        let num2 = Number.parseFloat(number2);
-        let result = function result() {
-            switch (operation) {
-            case '+':
-                const add = num1 + num2;
-                return add;
-                break;
-            case '-':
-                const subtract = num1 - num2;
-                return subtract;
-                break;
-            case '*':
-                const multiply = num1 * num2;
-                return multiply;
-                break;
-            case '/':
-                const divide = num1 / num2;
-                return divide;
-                break;
-            default: 
-                return num1 + num2;
-            };
-        };
-        return result()
-    }
-    
-    console.log(calc(number1, number2,'+'))
-    
-    // document.getElementById("result").innerHTML = calc(number1, number2, operation)
-    </script> -->
 </body>
 </html>

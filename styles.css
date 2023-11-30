@@ -1,25 +1,16 @@
-div {
-    display: flex;
-    margin: .5rem;
-}
-
-#number1 {
-    border: 2px solid black;
-    margin: .3rem;
-}
-
-#number2 {
-    border: 2px solid black;
-    margin: .3rem;
-}
-
 #result {
+    margin: 1rem;
     border: 2px solid black;
-    margin: .3rem;
 }
 
-button {
-    margin: .3rem;
+#zero {
+    width: 8.3rem;
+}
+
+input {
+    align-content: stretch;
+    width: 4rem;
+    height: 3rem;
 }
 
 body {
