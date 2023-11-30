@@ -1,0 +1,22 @@
+#result {
+    margin: 1rem;
+    border: 2px solid black;
+}
+
+#zero {
+    width: 8.3rem;
+}
+
+input {
+    align-content: stretch;
+    width: 4rem;
+    height: 3rem;
+}
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    margin: .5rem;
+}
